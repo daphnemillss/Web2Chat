@@ -52,7 +52,7 @@
                                         <directory>target</directory>
                                         <excludes>
                                             <exclude>WebChat-1.0-SNAPSHOT.war</exclude>
-                                            <exclude>dependency/WebChat-1.0-SNAPSHOT.jar</exclude>
+                                            <exclude>dependency/WebChat-1.0-SNAPSHOT.war</exclude>
                                         </excludes>
                                     </fileset>
                                 </filesets>
