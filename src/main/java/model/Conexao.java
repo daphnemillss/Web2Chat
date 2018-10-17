@@ -44,10 +44,10 @@ public class Conexao {
             getConnection().setAutoCommit(true);
             */
   
-            source.setServerName("localhost");
-            source.setDatabaseName("Chat");
-            source.setUser("postgres");
-            source.setPassword("1602");
+            source.setServerName(System.getenv("DATABASE_HOST"));
+            source.setDatabaseName(System.getenv("DATABASE_NAME"));
+            source.setUser(System.getenv("DATABASE_USER"));
+            source.setPassword(System.getenv("DATABASE_PASSWORD"));
             source.setMaxConnections(5);
             
             new InitialContext().rebind("DataSource", source);
